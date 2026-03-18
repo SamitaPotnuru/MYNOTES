@@ -1,0 +1,108 @@
+:root {
+  --sidebar-bg: #1e1e2f;
+  --sidebar-text: #fff;
+  --primary-color: #5c6bc0;
+  --bg-color: #f0f2f5;
+  --note-bg: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar__header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sidebar__title {
+  margin-bottom: 10px;
+}
+
+#addNoteBtn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebar__list {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.sidebar__list li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background 0.2s;
+}
+
+.sidebar__list li.active,
+.sidebar__list li:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Notes Section */
+.notes {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#noteContent {
+  width: 100%;
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1rem;
+  resize: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.delete-btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #e74c3c;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.delete-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
