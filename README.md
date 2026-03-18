@@ -19,8 +19,8 @@ This app allows users to **add, edit, delete, and update notes in real-time**. N
 - JavaScript (Vanilla JS)  
 - `localStorage` for data persistence
   
-## MYNOTES/
-├── index.html      # Main HTML file
-├── style.css       # CSS for styling
-├── script.js       # JavaScript for real-time functionality
-└── README.md       # Project documentation
+## MYNOTES Files
+1. index.html      # Main HTML file
+2. style.css       # CSS for styling
+3. script.js       # JavaScript for real-time functionality
+4. README.md       # Project documentation
