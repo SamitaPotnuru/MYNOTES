@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Notion Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <h1 class="sidebar__title">MyNotes</h1>
+        <button id="addNoteBtn">+ Add Note</button>
+      </div>
+      <ul class="sidebar__list" id="notesList"></ul>
+    </aside>
+
+    <!-- Main Notes Section -->
+    <main class="notes">
+      <textarea id="noteContent" placeholder="Select or add a note..." disabled></textarea>
+      <button id="deleteNoteBtn" class="delete-btn" disabled>Delete Note</button>
+    </main>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
